@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');  
 const dotenv = require('dotenv');
 const app = require('./app');
 
@@ -19,6 +19,7 @@ mongoose.connect(DB,
   console.log(con.connections);
   console.log('DB connection successfully');
 });
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
